@@ -12,13 +12,21 @@ import PreactComponent from '../components/PreactComponent.jsx';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<SolidComponent message="solid component" client:only="solid-js" />
-			<PreactComponent client:visible />
-		</main>
-		<Footer />
+	<body class="bg-gray-50">
+    <div class="flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8 bg-white max-w-7xl">
+        <h1 class="text-4xl font-bold text-blue-600 mb-8">1 on 1 Mentorship for Frontend Engineers</h1>
+        <p class="text-2xl mb-8 text-gray-700">Learn and simulate working in a startup environment with our 1 on 1 mentorship program for frontend engineers.</p>
+        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full mb-8">Sign Up Now</a>
+        <img src="https://picsum.photos/500/400" alt="Mentorship Image" class="w-full max-w-xl mb-8 shadow-lg">
+        <p class="text-xl text-gray-700 leading-relaxed mb-6">Our mentorship program is designed to help you gain first-hand experience of working in a startup environment. You will be matched with an experienced software engineer who will guide you through the process of designing and developing a real-world project. You will learn how to work collaboratively, how to solve problems, and how to use the latest tools and technologies in the frontend development world.</p>
+        <ul class="text-gray-700 leading-loose mb-6">
+            <li>One-on-one mentorship sessions with experienced software engineers</li>
+            <li>Opportunities to work on real-world projects and gain experience</li>
+            <li>Guidance on UI/UX design, front-end development, and testing</li>
+            <li>Assistance with improving your technical skills and career growth</li>
+            <li>Simulate real work environments for startup growth</li>
+        </ul>
+        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full inline-block">Find Out More</a>
+    </div>
 	</body>
 </html>
